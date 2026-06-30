@@ -1,5 +1,10 @@
 # ParallelsClipboardFix
 
+![CI](https://github.com/johnnylau/ParallelsClipboardFix/actions/workflows/ci.yml/badge.svg)
+![License](https://img.shields.io/github/license/johnnylau/ParallelsClipboardFix)
+![Rust](https://img.shields.io/badge/Rust-stable-orange)
+![Windows](https://img.shields.io/badge/platform-Windows-blue)
+
 English | [中文](#中文)
 
 `ParallelsClipboardFix` is a small Windows utility that repairs image clipboard data for Parallels Desktop shared clipboard sync.
