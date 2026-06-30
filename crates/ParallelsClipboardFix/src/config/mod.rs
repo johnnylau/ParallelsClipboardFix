@@ -250,7 +250,7 @@ mod tests {
     use super::{AppConfig, LogLevel};
 
     #[test]
-    fn parses_supported_keys() {
+    fn parses_supported_keys() -> Result<(), Box<dyn std::error::Error>> {
         let input = r#"
             enabled = false
             start_with_windows = true
@@ -261,7 +261,7 @@ mod tests {
             log_level = "debug"
         "#;
 
-        let config = AppConfig::parse(input).unwrap_or_else(|error| panic!("{error}"));
+        let config = AppConfig::parse(input)?;
 
         assert!(!config.enabled);
         assert!(config.start_with_windows);
@@ -270,6 +270,8 @@ mod tests {
         assert!(!config.write_png);
         assert!(config.write_dib);
         assert_eq!(config.log_level, LogLevel::Debug);
+
+        Ok(())
     }
 
     #[test]
