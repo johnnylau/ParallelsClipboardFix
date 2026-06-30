@@ -1,6 +1,6 @@
 # ParallelsClipboardFix
 
-![CI](https://github.com/johnnylau/ParallelsClipboardFix/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/johnnylau/ParallelsClipboardFix/actions/workflows/rust.yml/badge.svg)
 ![License](https://img.shields.io/github/license/johnnylau/ParallelsClipboardFix)
 ![Rust](https://img.shields.io/badge/Rust-stable-orange)
 ![Windows](https://img.shields.io/badge/platform-Windows-blue)
